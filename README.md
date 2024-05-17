@@ -10,8 +10,12 @@ Este projeto foca no processamento e transformação de dados com Power BI. Real
      - Valores monetários ajustados com decimal fixo.
      - Números dos departamentos, projetos e `Ssn`s mantidos como strings para permitir a categorização de dados, ao invés de serem tratados como valores numéricos usados para cálculos.
 
+   ![Type-values](Capturas/Values-type.jpg)
+
 3. **Separação da Coluna "Address"**
    - A coluna "Address" na tabela "Employee" foi separada em colunas distintas, contendo número da casa, rua, cidade e estado.
+
+   ![Address](Capturas/Address.jpg)
 
 4. **Junção das Tabelas Employee e Department**
    - A tabela "Employee" foi mesclada com a tabela "Department" usando o número do departamento como correspondência e utilizando uma junção externa à esquerda para garantir a inclusão de todos os funcionários, mesmo aqueles sem departamento associado.
@@ -20,13 +24,19 @@ Este projeto foca no processamento e transformação de dados com Power BI. Real
    - As colunas de nome e sobrenome dos funcionários foram mescladas para formar uma única coluna de nome completo.
 
 6. **Junção dos Nomes dos Gerentes**
-   - A tabela "Employee" foi mesclada consigo mesma, referenciando `ssn` e `Super_ssn`, para obter o nome do gerente de cada funcionário.
+   - A tabela "Employee" foi mesclada consigo mesma, referenciando `Ssn` e `Super_ssn`, para obter o nome do gerente de cada funcionário.
+
+   ![Employee-manager](Capturas/Employee-manager.jpg)
 
 7. **Criação de Chave Departamento-Localização**
    - Mesclei os nomes dos departamentos com suas respectivas localizações, garantindo que cada combinação departamento-local fosse única.
 
+   ![Departament-loc](Capturas/Departament-loc.jpg)
+
 8. **Agrupamento por Gerente**
    - Os dados foram agrupados para determinar o número de colaboradores por gerente.
+
+   ![Managers](Capturas/Managers.jpg)
 
 9. **Eliminação de Colunas Não Utilizadas**
    - Todas as colunas que não seriam utilizadas nos relatórios finais foram eliminadas de cada tabela, otimizando o modelo de dados para análise.
