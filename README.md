@@ -46,3 +46,4 @@ Usei a mesclagem para unir as tabelas "employee" e "department" porque queremos 
 ### Por que não usar atribuir para a criação do departamento-local?
 
 Não foi possivel usar a combinação para criar a tabela departamento-local porque não estamos apenas adicionando dados de uma tabela à outra. Em vez disso, estamos criando uma nova tabela de dimensão única que contém combinações específicas de departamentos e suas localizações. A mesclagem é mais apropriada aqui porque precisamos garantir que cada combinação departamento-local seja única e completa.
+.
