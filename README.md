@@ -2,6 +2,11 @@
 
 Este projeto foca no processamento e transformação de dados com Power BI. Realizei ajustes nos tipos de dados, separei colunas complexas e mesclei tabelas para otimizar a estrutura dos dados. O objetivo é demonstrar técnicas de tratamento e integração de dados.
 
+![Relatorio](Capturas/Relatorio.png)
+
+
+## Manipulação de Dados
+
 1. **Reordenação na Inserção de Funcionários**
    - Na construção da base de dados, apliquei uma reordenação na inserção de funcionários. Como o valor de `Super_ssn` referencia o `Ssn`, foi necessário criar uma hierarquia onde o valor de `Ssn` fosse definido antes de `Super_ssn` poder usá-lo, respeitando assim a constraint "fk_employee".
 
